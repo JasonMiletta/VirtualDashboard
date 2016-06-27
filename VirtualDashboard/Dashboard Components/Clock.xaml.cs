@@ -12,9 +12,15 @@ namespace VirtualDashboard
         public Clock()
         {
             this.InitializeComponent();
+            setupClockDispatcherTimer();
+        }
+
+        private void setupClockDispatcherTimer()
+        {
+            clockText.Text = DateTime.Now.ToString("h:mm:ss tt");
 
             DispatcherTimer timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(0, 0, 0, 0, 500);
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 100);
             timer.Tick += new EventHandler<object>(timer_Tick);
             timer.Start();
         }

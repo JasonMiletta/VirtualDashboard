@@ -1,4 +1,5 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using VirtualDashboard.Dashboard_Components;
+using Windows.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -13,6 +14,7 @@ namespace VirtualDashboard
         {
             this.InitializeComponent();
             ClockFrame.Navigate(typeof(Clock));
+            DateFrame.Navigate(typeof(Date));
         }
     }
 }
