@@ -1,5 +1,6 @@
 ﻿{
   "dependencies": {
+    "Google.Apis.Calendar.v3": "1.13.1.529",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
   },
   "frameworks": {
