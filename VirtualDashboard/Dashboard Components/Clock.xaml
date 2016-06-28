@@ -8,6 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="clockText" HorizontalAlignment="Center" TextWrapping="NoWrap" Text="12:00" VerticalAlignment="Center" TextAlignment="Center" Width="126"/>
+        <TextBlock x:Name="clockText" HorizontalAlignment="Center" TextWrapping="NoWrap" Text="12:00:00 PM" VerticalAlignment="Center" TextAlignment="Center"
+                   Style="{ThemeResource HeaderTextBlockStyle}"/>
     </Grid>
 </Page>
