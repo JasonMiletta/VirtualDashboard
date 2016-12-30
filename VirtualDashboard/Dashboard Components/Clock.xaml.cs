@@ -17,7 +17,7 @@ namespace VirtualDashboard
 
         private void setupClockDispatcherTimer()
         {
-            clockText.Text = DateTime.Now.ToString("h:mm:ss tt");
+            clockText.Text = DateTime.Now.ToString("h:mm:ss");
 
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = new TimeSpan(0, 0, 0, 0, 100);
@@ -27,7 +27,7 @@ namespace VirtualDashboard
 
         private void timer_Tick(object sender, object e)
         {
-            clockText.Text = DateTime.Now.ToString("h:mm:ss tt");
+            clockText.Text = DateTime.Now.ToString("h:mm:ss");
         }
     }
 }

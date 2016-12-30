@@ -30,7 +30,8 @@ namespace VirtualDashboard.Dashboard_Components
 
         private void setupDateDispatcherTime()
         {
-            dateText.Text = DateTime.Now.Date.ToString("dddd | MM/dd/yy");
+            dayText.Text = DateTime.Now.Date.ToString("dddd");
+            dateText.Text = DateTime.Now.Date.ToString("MM/dd/yy");
 
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = new TimeSpan(0, 1, 0);
@@ -40,7 +41,8 @@ namespace VirtualDashboard.Dashboard_Components
 
         private void date_Tick(object sender, object e)
         {
-            dateText.Text = DateTime.Now.Date.ToString("dddd | MM/dd/yy");
+            dayText.Text = DateTime.Now.Date.ToString("dddd");
+            dateText.Text = DateTime.Now.Date.ToString("MM/dd/yy");
         }
     }
 }
